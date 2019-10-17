@@ -19,9 +19,7 @@ function createElement(node, attributes, children) {
 
   if (children) {
     if (typeof children === 'object') {
-      console.log('asd: ', children[0]);
       for (let el in children) {
-        console.log(children[el]);
         if (typeof children[el] === 'string') {
           const div = document.createElement('div');
           div.textContent = children[el];
